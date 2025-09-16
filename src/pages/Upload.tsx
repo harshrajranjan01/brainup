@@ -214,7 +214,7 @@ export const Upload = () => {
 
                 {/* Action Buttons */}
                 {processComplete && (
-                  <div className="grid md:grid-cols-3 gap-4 pt-6 border-t">
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 pt-6 border-t">
                     <Link to="/flashcards">
                       <Button className="btn-hero w-full">
                         Study Flashcards <ArrowRight className="ml-2 w-4 h-4" />
@@ -226,6 +226,11 @@ export const Upload = () => {
                     <Link to="/chatbot">
                       <Button variant="outline" className="w-full">
                         Ask AI Tutor
+                      </Button>
+                    </Link>
+                    <Link to="/knowledge-graph">
+                      <Button variant="outline" className="w-full">
+                        Knowledge Map
                       </Button>
                     </Link>
                   </div>
